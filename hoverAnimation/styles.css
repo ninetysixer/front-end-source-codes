@@ -1,0 +1,12 @@
+.box {
+  background-color: #FDB927;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: background-color 0.5s ease; /* Add transition effect */
+}
+
+.box:hover {
+  background-color: #552583
+}
