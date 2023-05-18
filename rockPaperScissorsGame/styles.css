@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  color: gold;
+}
+
+#game {
+  margin-top: 50px;
+  border: 2px solid purple;
+  background-color: purple;
+  color: gold;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#choices {
+  margin-top: 20px;
+}
+
+.choice {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
