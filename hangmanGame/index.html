@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Game</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Hangman Game by semihdursungul</h1>
+  <div id="hangman-image">
+    <div class="gallows"></div>
+    <div class="hanger"></div>
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="left-arm"></div>
+    <div class="right-arm"></div>
+    <div class="left-leg"></div>
+    <div class="right-leg"></div> 
+  </div>
+  <div id="word-container">
+    <span id="word"></span>
+  </div>
+  <div id="guesses">
+    <p>Wrong guesses:</p>
+    <span id="wrong-guesses"></span>
+  </div>
+  <div id="lives">
+    <p>Remaining lives: <span id="remaining-lives"></span></p>
+  </div>
+  <div id="buttons">
+    <p>Guess a letter:</p>
+    <button class="letter-button" onclick="makeGuess('A')">A</button>
+    <button class="letter-button" onclick="makeGuess('B')">B</button>
+    <button class="letter-button" onclick="makeGuess('C')">C</button>
+    <button class="letter-button" onclick="makeGuess('D')">D</button>
+    <button class="letter-button" onclick="makeGuess('E')">E</button>
+    <button class="letter-button" onclick="makeGuess('F')">F</button>
+    <button class="letter-button" onclick="makeGuess('G')">G</button>
+    <button class="letter-button" onclick="makeGuess('H')">H</button>
+    <button class="letter-button" onclick="makeGuess('I')">I</button>
+    <button class="letter-button" onclick="makeGuess('J')">J</button>
+    <button class="letter-button" onclick="makeGuess('K')">K</button>
+    <button class="letter-button" onclick="makeGuess('L')">L</button>
+    <button class="letter-button" onclick="makeGuess('M')">M</button>
+    <button class="letter-button" onclick="makeGuess('N')">N</button>
+    <button class="letter-button" onclick="makeGuess('O')">O</button>
+    <button class="letter-button" onclick="makeGuess('P')">P</button>
+    <button class="letter-button" onclick="makeGuess('Q')">Q</button>
+    <button class="letter-button" onclick="makeGuess('R')">R</button>
+    <button class="letter-button" onclick="makeGuess('S')">S</button>
+    <button class="letter-button" onclick="makeGuess('T')">T</button>
+    <button class="letter-button" onclick="makeGuess('U')">U</button>
+    <button class="letter-button" onclick="makeGuess('V')">V</button>
+    <button class="letter-button" onclick="makeGuess('W')">W</button>
+    <button class="letter-button" onclick="makeGuess('X')">X</button>
+    <button class="letter-button" onclick="makeGuess('Y')">Y</button>
+    <button class="letter-button" onclick="makeGuess('Z')">Z</button>
+    <!-- Add more buttons for each letter of the alphabet -->
+  </div>
+  <div id="play-again-container">
+    <button id="play-again" onclick="initializeGame()">Play Again</button>
+  </div>
+  <div id="game-message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
