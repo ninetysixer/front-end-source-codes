@@ -1,0 +1,41 @@
+.counter {
+  text-align: center;
+  margin-top: 50px;
+  border-style: solid;
+  padding: 100px;
+  border-color: yellow;
+  background-color: #212121;
+}
+
+h1 {
+  font-size: 48px;
+  color: whitesmoke;
+
+}
+
+
+
+.buttons {
+  margin: 75px;
+
+}
+
+.buttons #input-number{
+  height: 45px;
+}
+
+.buttons #decrement{
+  padding-top: 6px;
+  padding-bottom: 13px;
+}
+
+.buttons #increment{
+  padding-top: 6px;
+  padding-bottom: 13px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 24px;
+  margin: 0 10px;
+}
