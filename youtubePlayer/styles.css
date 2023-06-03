@@ -1,0 +1,18 @@
+#music-player {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#video-container {
+  width: 640px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+#controls {
+  margin-top: 20px;
+}
+
+button {
+  margin: 0 5px;
+}
