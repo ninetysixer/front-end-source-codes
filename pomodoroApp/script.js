@@ -1,5 +1,5 @@
 // Timer variables
-let workMinutes = 0.1;
+let workMinutes = 25;
 let breakMinutes = 5;
 let timerRunning = false;
 let timerInterval;
