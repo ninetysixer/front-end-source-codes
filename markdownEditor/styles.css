@@ -1,0 +1,27 @@
+/* Basic styles for the editor and preview sections */
+#editor,
+#preview {
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 32px; /* Increase the font size as desired */
+}
+
+/* Additional styles for the preview section */
+#preview {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: Arial, sans-serif; /* Set a default font */
+  min-height: 200px; /* Ensure a minimum height for the preview */
+  overflow-y: auto; /* Add a vertical scrollbar if needed */
+  background-color: #f7f7f7; /* Set a background color */
+}
+
+/* Additional styles for the container */
+.container {
+  display: flex;
+}
+
+/* Styles for the controls section */
+.controls {
+  padding-top: 20px;
+}
