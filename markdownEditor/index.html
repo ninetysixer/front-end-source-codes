@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Markdown Editor</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <textarea id="editor" oninput="updatePreview()"></textarea>
+    <div id="preview"></div>
+  </div>
+
+  <div class="controls">
+    <button onclick="applyBold()">Bold</button>
+    <button onclick="openSaveWindow()">Save</button>
+
+    <select id="fontSelect" onchange="applyFont()">
+      <option value="">Choose a font</option>
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+      <!-- Add more font options as desired -->
+    </select>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
