@@ -1,4 +1,4 @@
-const apiKey = 'YOUR-API-KEY';
+const apiKey = 'YOUR-API-KEY'; // Enter your API key here
 
 function getRandomMovie() {
   const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`;
@@ -20,16 +20,16 @@ function displayMovieDetails(movie) {
   const posterElement = document.getElementById('movie-poster');
   const overviewElement = document.getElementById('movie-overview');
   const genresElement = document.getElementById('movie-genres');
-  const imdbElement = document.getElementById('movie-imdb');
+  const scoreElement = document.getElementById('movie-score');
 
   titleElement.textContent = movie.title;
   posterElement.src = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
   overviewElement.textContent = movie.overview;
   genresElement.textContent = `Genres: ${getGenresString(movie.genre_ids)}`;
 
-  // Fetch IMDb details using another API or calculate IMDb score based on available data
-  const imdbScore = calculateImdbScore(movie.vote_average);
-  imdbElement.textContent = `IMDb Score: ${imdbScore}`;
+  // Calculate score out of 10
+  const Score = calculateScore(movie.vote_average);
+  scoreElement.textContent = `Score: ${Score}/10`;
 }
 
 function getGenresString(genreIds) {
@@ -45,11 +45,10 @@ function getGenresString(genreIds) {
   return genres.join(', ');
 }
 
-function calculateImdbScore(voteAverage) {
-  // Calculate IMDb score based on the vote average
-  // You can implement your own formula here
-  const imdbScore = voteAverage / 2;
-  return imdbScore.toFixed(1);
+function calculateScore(voteAverage) {
+  // Calculate score out of 10
+  const imdbScore = (voteAverage).toFixed(1);
+  return imdbScore;
 }
 
 document.addEventListener('DOMContentLoaded', getRandomMovie);
