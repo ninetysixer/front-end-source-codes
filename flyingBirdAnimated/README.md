@@ -1,1 +1,3 @@
-![image](https://github.com/semihdursungul/front-end-source-codes/assets/114025283/b2cacb6c-727d-4b7c-9205-938333b25e2a)
+![flyingBird](https://github.com/semihdursungul/front_end_projects/assets/114025283/f37bda39-3665-4b45-9300-36e1d3ec24b4)
+
+Simple flying bird animation by semihdursungul using HTML and CSS. Feel free to use it anywhere you want.
