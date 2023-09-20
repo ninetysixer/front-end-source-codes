@@ -2,5 +2,4 @@
 
 Simple BMI calculator using HTML, CSS and JS
 
-
 You can enter your height and weight for program to calculate your BMI
